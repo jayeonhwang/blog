@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   patch"posts/:id" => "posts#update"
   delete"posts/:id" => "posts#destroy"
   
-  post"/comments" => "comments#create"
+  post "/comments" => "comments#create"
+  patch "/comments/:id" => "comments#update"
+  delete "/comments/:id" => "comments#destroy"
 end
